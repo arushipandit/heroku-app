@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import CountVectorizer
-data_1 = pd.read_csv('/content/drive/My Drive/imdb dataset/IMDB Dataset.csv')
+data_1 = pd.read_csv('IMDB Dataset.csv')
 def clean1(text):
   soup = BeautifulSoup(text,'html.parser')
   a = soup.get_text()
